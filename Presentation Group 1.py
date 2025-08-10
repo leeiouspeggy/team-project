@@ -60,7 +60,7 @@ while add_more:
         if choice in ("yes", "no"):
             break
         else:
-            print("❌ Please enter only 'yes' or 'no'.")
+            print("Please enter only 'yes' or 'no'.")
     if choice == "no":
         add_more = False
 
@@ -79,7 +79,7 @@ while True:
         print(f"  Average: {details['Average']:.2f}")
         print(f"  Overall Grade: {details['Grade']}")
     else:
-        print("❌ Student not found.")
+        print("Student not found.")
 
 print("\n=== Students Performance Summary (Sorted by Average Score) ===")
 sorted_students = sorted(students.items(), key=lambda x: x[1]['Average'], reverse=True)
